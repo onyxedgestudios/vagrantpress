@@ -18,8 +18,28 @@ figure {
 
 @import "tables";
 
-
+body {
+	font:400 14px/20px "Open Sans",Helvetica,sans-serif;
+}
 .site-header {
 	background: -webkit-linear-gradient(#2b2f3d,#515665);
 	border-bottom:4px solid #2b2f3d;
+	padding:10px;
+	a {
+		color:#fff;
+		&:hover {
+			color:#ff9933;
+		}
+		&:visted {
+			color:#fff;
+		}
+	}
+}
+
+.site-title a {
+	display:block;
+	background:url(/wp-content/themes/_s/img/logo.png) no-repeat;
+	height:80px;
+	width:120px;
+	text-indent:-999em;
 }

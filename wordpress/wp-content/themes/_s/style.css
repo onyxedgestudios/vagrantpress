@@ -83,7 +83,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  background: white;
+  background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
 
 article,
@@ -160,7 +160,7 @@ address {
   margin: 0 0 1.5em; }
 
 pre {
-  background: #eeeeee;
+  background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 1.5rem;
@@ -176,7 +176,7 @@ code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
 
 abbr, acronym {
-  border-bottom: 1px dotted #666666;
+  border-bottom: 1px dotted #666;
   cursor: help; }
 
 mark, ins {
@@ -207,7 +207,7 @@ big {
 3.0 Elements
 --------------------------------------------------------------*/
 hr {
-  background-color: #cccccc;
+  background-color: #ccc;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
@@ -248,9 +248,26 @@ table {
 th {
   font-weight: bold; }
 
+body {
+  font: 400 14px/20px "Open Sans",Helvetica,sans-serif; }
+
 .site-header {
   background: -webkit-linear-gradient(#2b2f3d, #515665);
-  border-bottom: 4px solid #2b2f3d; }
+  border-bottom: 4px solid #2b2f3d;
+  padding: 10px; }
+  .site-header a {
+    color: #fff; }
+    .site-header a:hover {
+      color: #ff9933; }
+    .site-header a:visted {
+      color: #fff; }
+
+.site-title a {
+  display: block;
+  background: url(/wp-content/themes/_s/img/logo.png) no-repeat;
+  height: 80px;
+  width: 120px;
+  text-indent: -999em; }
 
 /*--------------------------------------------------------------
 4.0 Forms
@@ -271,7 +288,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
-  border-color: #cccccc #cccccc #bbbbbb;
+  border-color: #ccc #ccc #bbb;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
   -webkit-border-radius: 3px;
@@ -293,7 +310,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #cccccc #bbbbbb #aaaaaa;
+  border-color: #ccc #bbb #aaa;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
 
 button:focus,
@@ -304,7 +321,7 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-  border-color: #aaaaaa #bbbbbb #bbbbbb;
+  border-color: #aaa #bbb #bbb;
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
 input[type="checkbox"],
@@ -336,8 +353,8 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666666;
-  border: 1px solid #cccccc;
+  color: #666;
+  border: 1px solid #ccc;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
   -webkit-border-radius: 3px;
@@ -349,7 +366,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-  color: #111111; }
+  color: #111; }
 
 input[type="text"],
 input[type="email"],
@@ -661,3 +678,5 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*# sourceMappingURL=style.css.map */
